@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBR Designs | Elevated Interior Design</title>
+    <meta name="description" content="IBR Designs creates refined interiors that reflect individuality and elevate everyday living through timeless design." />
+    <link rel="icon" href="/designingtrial/favicon.png" type="image/png" />
+    <meta property="og:title" content="IBR Designs | Elevated Interior Design" />
+    <meta property="og:description" content="IBR Designs creates refined interiors that reflect individuality and elevate everyday living through timeless design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IBR Designs | Elevated Interior Design" />
+    <meta name="twitter:description" content="IBR Designs creates refined interiors that reflect individuality and elevate everyday living through timeless design." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    <script type="module" crossorigin src="/designingtrial/assets/index-nWd8Wsh_.js"></script>
+    <link rel="stylesheet" crossorigin href="/designingtrial/assets/index-rmrgIAhq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
